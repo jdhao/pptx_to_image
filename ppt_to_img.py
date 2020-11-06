@@ -16,8 +16,6 @@ def main():
 
     start = time.time()
     print("Start converting your PPT to {} images.".format(img_format))
-    with open(pptfile_name, "rb") as f:
-        ppt_bytes = f.read()
 
     filename_base = os.path.basename(pptfile_name)
     filename_bare = os.path.splitext(filename_base)[0]
